@@ -3,8 +3,9 @@
         <h3 class="question">{{q.description}}</h3>
         <ul>
             <li *ngFor="let option of getCurrentQuestion();">
-                <button ng-click="nextQuestion(option)">{{option.description}}</button>
+                <button type="button" class="btn btn-success" (click)="nextQuestion(option)">{{option.description}}</button>
             </li>
         </ul>
+        <h1>{{currentId}}</h1>
     </div>
 </div>

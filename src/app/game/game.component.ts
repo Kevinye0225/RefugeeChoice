@@ -17,17 +17,19 @@ export class GameComponent implements OnInit {
 
   constructor(_QuestionsService: QuestionsService) { 
     this.questions = _QuestionsService.getQuestions();
+    // this.options = this.questions[0].options;
   }
 
   ngOnInit() {
   }
 
   getCurrentQuestion() {
-    return this.questions[this.currentId].options;
+    return this.questions[this.currentId-1].options;
   }
 
   nextQuestion(_option: Option) {
-  	this.currentId = _option.id;
+  	this.currentId = _option.choiceId;
+  	console.log(this.currentId);
   }
 
 }
