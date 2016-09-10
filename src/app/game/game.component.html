@@ -1,11 +1,19 @@
-<div class="game" *ngFor="let q of questions">
-    <div *ngIf="q.id == currentId">
-        <h3 class="question">{{q.description}}</h3>
-        <ul>
+<div class="game">
+    <div *ngFor="let q of questions">
+        <div *ngIf="q.id == currentId">
+            <h3 class="question">{{q.description}}</h3>
+            <!--         <ul>
             <li *ngFor="let option of getCurrentQuestion();">
                 <button type="button" class="btn btn-success" (click)="nextQuestion(option)">{{option.description}}</button>
             </li>
-        </ul>
-        <h1>{{currentId}}</h1>
+        </ul> -->
+            <form *ngFor="let option of getCurrentQuestion();">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="blankRadio" id="blankRadio1" value="{{option.choiceId}}" (click)="nextQuestion(option)"> {{option.description}}
+                    </label>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
