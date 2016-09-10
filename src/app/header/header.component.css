@@ -1,0 +1,27 @@
+header {
+  background-color: #336699;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 5px;
+  margin: 0px;
+}
+
+li {
+  display: inline;
+  font-size: 1.5em;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a { text-decoration: none; }
+a:link { color:#FFFFFF; }
+a:visited { color:#FFFFFF; }
+a:hover { color:#FFFFFF; }
+a:active { color:#FFFFFF; }
