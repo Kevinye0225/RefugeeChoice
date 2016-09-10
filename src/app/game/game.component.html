@@ -1,4 +1,8 @@
-<p *ngFor="let q of questions"> 
-  {{q.id}}
-
-</p>
+<div class="game">
+  <h3 class="question">[CHOICE {{getCurrentQuestion().id}}]: {{getCurrentQuestion().description}}</h3>
+  <ul>
+    <li *ngFor="let option of getCurrentQuestion().options;">
+      <input type="button" value="{{option.description}}">
+    </li>
+  </ul>
+</div>

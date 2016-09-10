@@ -10,13 +10,18 @@ import { Choice } from './choice';
   providers: [QuestionsService]
 })
 export class GameComponent implements OnInit {
-  currentId: number = 1;
+  currentId: number = 0;
   questions: Array<Choice>;
+
   constructor(_QuestionsService: QuestionsService) { 
     this.questions = _QuestionsService.getQuestions();
   }
 
   ngOnInit() {
+  }
+
+  getCurrentQuestion() {
+    return this.questions[this.currentId];
   }
 
 }
