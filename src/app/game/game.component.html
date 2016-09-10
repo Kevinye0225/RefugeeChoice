@@ -1,8 +1,10 @@
-<div class="game">
-  <h3 class="question">[CHOICE {{getCurrentQuestion().id}}]: {{getCurrentQuestion().description}}</h3>
-  <ul>
-    <li *ngFor="let option of getCurrentQuestion().options;">
-      <input type="button" value="{{option.description}}">
-    </li>
-  </ul>
+<div class="game" *ngFor="let q of questions">
+    <div *ngIf="q.id == currentId">
+        <h3 class="question">{{q.description}}</h3>
+        <ul>
+            <li *ngFor="let option of getCurrentQuestion();">
+                <button ng-click="nextQuestion(option)">{{option.description}}</button>
+            </li>
+        </ul>
+    </div>
 </div>
