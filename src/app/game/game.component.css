@@ -4,9 +4,8 @@
   background-color: #CCCCCC;
   padding: 0px;
   margin: 0px;
-  background-image: url("/app/game/background1-01.png");
+  background: url("/app/game/background1-01.png") no-repeat center;
   background-size: cover;
-  background-repeat: no-repeat;
 
   display: flex;
   flex-direction: column;

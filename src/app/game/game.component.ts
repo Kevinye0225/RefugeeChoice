@@ -17,7 +17,6 @@ export class GameComponent implements OnInit {
 
   constructor(_QuestionsService: QuestionsService) { 
     this.questions = _QuestionsService.getQuestions();
-    // this.options = this.questions[0].options;
   }
 
   ngOnInit() {

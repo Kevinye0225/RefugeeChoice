@@ -17,5 +17,9 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
   ]
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Liberty in North Korea';
+  description = [
+    'The North Korean people are living unimaginable realities every day.',
+    'Take a walk in their shoes and then take action for change.'
+  ];
 }
