@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from './header'
-import { FooterComponent } from './footer'
 import { GameComponent } from './game';
 import { ROUTER_DIRECTIVES } from '@angular/router';
 
@@ -10,8 +8,6 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
   directives: [
-    HeaderComponent,
-    FooterComponent,
     GameComponent,
     ROUTER_DIRECTIVES
   ]
