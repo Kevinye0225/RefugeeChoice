@@ -11,9 +11,11 @@ import { Option } from './option';
   providers: [QuestionsService]
 })
 export class GameComponent implements OnInit {
-  currentId: number = 1;
+  currentId: number = 0;
   questions: Array<Choice>;
   options: Array<Option>;
+  friend: string;
+  family: string;
 
   constructor(_QuestionsService: QuestionsService) { 
     this.questions = _QuestionsService.getQuestions();
@@ -29,6 +31,10 @@ export class GameComponent implements OnInit {
   nextQuestion(_option: Option) {
   	this.currentId = _option.choiceId;
   	console.log(this.currentId);
+  }
+
+  startGame(){
+  	this.currentId = 1;
   }
 
 }
