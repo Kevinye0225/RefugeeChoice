@@ -1,4 +1,11 @@
 .game {
+<<<<<<< HEAD
+  height: 800px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background: url("/app/game/background1-01.png") no-repeat;
+=======
   height: 100vh;
   width: 100%;
   background-color: #CCCCCC;
@@ -6,6 +13,7 @@
   padding-bottom: 50px;
   margin: 0px;
   background: url("images/background1-01.png") no-repeat center top;
+>>>>>>> c5b6abcf9bc23cf7d67567fd47ab429dd3f71236
   background-size: cover;
 
   display: flex;
