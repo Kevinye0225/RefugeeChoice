@@ -2,17 +2,8 @@
     <div *ngFor="let q of questions">
         <div *ngIf="q.id == currentId">
             <h3 class="question">{{q.description}}</h3>
-            <!--         <ul>
-            <li *ngFor="let option of getCurrentQuestion();">
-                <button type="button" class="btn btn-success" (click)="nextQuestion(option)">{{option.description}}</button>
-            </li>
-        </ul> -->
             <form *ngFor="let option of getCurrentQuestion();">
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="blankRadio" id="blankRadio1" value="{{option.choiceId}}" (click)="nextQuestion(option)"> {{option.description}}
-                    </label>
-                </div>
+                <input type="button" value="{{option.description}}" (click)="nextQuestion(option)">
             </form>
         </div>
     </div>

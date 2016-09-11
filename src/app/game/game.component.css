@@ -15,8 +15,8 @@
 
 .question {
   font-size: 1.5em;
-  padding: 15px;
-  text-align: center;
+  padding: 10px;
+  text-align: left;
 }
 
 ul {
@@ -31,12 +31,12 @@ li {
   margin-right: 10px;
 }
 
-button {
-  background-color: rgba(0, 0, 0, 0.1);
+input[type="button"] {
+  background-color: rgba(0, 0, 0, 0);
   border: none;
   color: white;
-  padding: 15px 32px;
-  text-align: center;
+  padding: 5px 10px;
+  text-align: left;
   text-decoration: none;
   font-size: 1em;
 }
