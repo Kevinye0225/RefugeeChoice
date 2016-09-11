@@ -3,7 +3,9 @@
         <div *ngIf="q.id == currentId">
             <h3 class="question">{{q.description}}</h3>
             <form *ngFor="let option of getCurrentQuestion();">
-                <input type="button" value="{{option.description}}" (click)="nextQuestion(option)">
+                <div class="option">
+                    <input type="button" value="{{option.description}}" (click)="nextQuestion(option)">
+                </div>
             </form>
         </div>
     </div>

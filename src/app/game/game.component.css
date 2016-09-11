@@ -1,10 +1,11 @@
 .game {
-  height: 600px;
+  height: 100vh;
   width: 100%;
   background-color: #CCCCCC;
-  padding: 0px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   margin: 0px;
-  background: url("/app/game/background1-01.png") no-repeat center;
+  background: url("/app/game/background1-01.png") no-repeat center top;
   background-size: cover;
 
   display: flex;
@@ -15,8 +16,14 @@
 
 .question {
   font-size: 1.5em;
-  padding: 10px;
-  text-align: left;
+  max-width: 1000px;
+  padding: 10px 50px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.option {
+  text-align: center;
 }
 
 ul {
@@ -29,6 +36,8 @@ li {
   display: inline;
   margin-left: 10px;
   margin-right: 10px;
+  text-align: center;
+  width: fill;
 }
 
 input[type="button"] {
@@ -36,7 +45,7 @@ input[type="button"] {
   border: none;
   color: white;
   padding: 5px 10px;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   font-size: 1em;
 }
